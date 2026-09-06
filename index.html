@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph / Social Sharing Previews -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jakkapol Saingam | Multimedia Creator & Video Producer">
+<meta property="og:description" content="Portfolio รวมผลงาน Video Production, Motion Graphics, Photography และระบบ Live Streaming">
+<meta property="og:image" content="https://i.postimg.cc/hvd7RVT1/1-n-w.jpg">
+  <title>PORTFOLIO</title>
+  
+  <!-- Online Favicon (Camera Icon) -->
+  <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/C85A32/camera--v1.png">
+  
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts: Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-th">
+
+  <!-- Floating Capsule Navbar -->
+  <div class="floating-nav-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-pill">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand fw-bold" href="#hero">PORTFOLIO</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <i class="bi bi-list fs-4 text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav gap-1 align-items-lg-center">
+            <!-- ซ่อนลิงก์ Showreel ชั่วคราว
+            <li class="nav-item">
+              <a class="nav-link" href="#showreel">Showreel</a>
+            </li>
+            -->
+            <li class="nav-item">
+              <a class="nav-link" href="#highlights">
+                <span data-lang="th">ภาพรวม</span>
+                <span data-lang="en">Overview</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">
+                <span data-lang="th">ผลงาน</span>
+                <span data-lang="en">Works</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">
+                <span data-lang="th">ทักษะ</span>
+                <span data-lang="en">Skills</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">
+                <span data-lang="th">ประสบการณ์</span>
+                <span data-lang="en">Experience</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <span data-lang="th">ติดต่อ</span>
+                <span data-lang="en">Contact</span>
+              </a>
+            </li>
+
+            <!-- Resume Button -->
+            <li class="nav-item ms-lg-2 my-2 my-lg-0">
+              <a href="https://drive.google.com/file/d/1heThnKWeAMTfES5nF6_ER_wfNl68GCSJ/view?usp=sharing" 
+                class="btn btn-sm btn-primary-warm px-3 rounded-pill" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                <i class="bi bi-file-earmark-person me-1"></i> Resume
+              </a>
+            </li>
+
+            <!-- Language Switcher -->
+            <li class="nav-item ms-lg-2">
+              <div class="lang-switcher d-flex gap-1">
+                <button type="button" id="btn-th" class="btn active" onclick="setLanguage('th')">TH</button>
+                <button type="button" id="btn-en" class="btn" onclick="setLanguage('en')">EN</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- 1. Hero Section -->
+  <section id="hero" class="hero-section pb-5 bg-section-white border-bottom">
+    <div class="container py-5 text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <!-- Profile Avatar รูปวงกลม -->
+          <div class="hero-avatar-wrapper mb-4">
+            <img src="https://i.postimg.cc/hvd7RVT1/1-n-w.jpg" 
+                 alt="จักรพล ไทรงาม (Jakkapol Saingam)" 
+                 class="hero-avatar">
+          </div>
+
+          <h1 class="display-4 fw-bold mb-2">
+            <span data-lang="th">สวัสดีครับ ผม จักรพล ไทรงาม</span>
+            <span data-lang="en">Hello, I'm Jakkapol Saingam</span>
+          </h1>
+
+          <p class="h4 text-secondary mb-3 fw-normal">Multimedia Creator &amp; Video Producer</p>
+          
+          <p class="text-warm-muted mb-4 lead fs-6">
+            <span data-lang="th">พร้อมนำทักษะด้านงานภาพและสื่อดิจิทัลครบวงจร ทั้ง <strong>Photo, Video Production, Motion Graphics</strong> และการควบคุม <strong>Live Streaming</strong> ผสานพื้นฐานด้านเทคโนโลยีคอมพิวเตอร์ มาร่วมสร้างสรรค์ผลงานคุณภาพและขับเคลื่อนเป้าหมายขององค์กร</span>
+            <span data-lang="en">Delivering end-to-end visual solutions across <strong>Photography, Video Production, 2D Motion Graphics</strong>, and multi-camera <strong>Live Streaming</strong> systems, backed by a solid foundation in computing to drive team success.</span>
+          </p>
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#portfolio" class="btn btn-primary-warm btn-lg px-4 shadow-sm">
+              <i class="bi bi-grid-3x3-gap-fill me-1"></i>
+              <span data-lang="th">ดูผลงานทั้งหมด</span>
+              <span data-lang="en">View Portfolio</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1heThnKWeAMTfES5nF6_ER_wfNl68GCSJ/view?usp=sharing" 
+              class="btn btn-outline-warm btn-lg px-4" 
+              target="_blank" 
+              rel="noopener noreferrer">
+              <i class="bi bi-file-earmark-pdf me-1"></i>
+              <span data-lang="th">เปิดดู Resume (PDF)</span>
+              <span data-lang="en">View Resume (PDF)</span>
+            </a>
+          </div>
+
+          <!-- Status Badge -->
+          <div class="mt-4">
+            <span class="badge badge-category px-3 py-2 rounded-pill">
+              <i class="bi bi-briefcase me-1"></i>
+              <span data-lang="th">พร้อมรับงานประจำและโปรดักชัน / Open for Opportunities</span>
+              <span data-lang="en">Available for Full-time &amp; Production Roles</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Overview / Highlights & Production Workflow Section -->
+  <section id="highlights" class="py-5 bg-section-alt border-bottom">
+    <div class="container py-3">
+
+      <!-- หัวข้อใหญ่ประจำเซกชัน (Overview Section Header) -->
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold text-warm-dark mb-2">
+          <span data-lang="th">ภาพรวม</span>
+          <span data-lang="en">Professional Overview</span>
+        </h2>
+        <p class="text-warm-muted mb-0 mx-auto" style="max-width: 700px;">
+          <span data-lang="th">จากจุดเริ่มต้นในฐานะฟรีแลนซ์ สู่การผลิตสื่อระดับองค์กรและเครือข่ายสุขภาพชั้นนำ <br> ผสานความเชี่ยวชาญทั้งงานโปรดักชันและระบบดิจิทัล</span>
+          <span data-lang="en">From freelance beginnings to leading corporate and healthcare multimedia productions, blending creative cinematography with digital technology.</span>
+        </p>
+      </div>
+
+      <!-- แถวบน: 4 สถิติจุดเด่น (Metrics / Highlights) รองรับ 2 ภาษา -->
+      <div class="row g-3 mb-5 text-center">
+        
+        <!-- Metric 1: ประสบการณ์ฟรีแลนซ์และงานประจำ -->
+        <div class="col-6 col-lg-3">
+          <div class="card stat-card h-100 border-0 p-3 rounded-4 bg-white shadow-sm">
+            <div class="stat-icon-wrap mx-auto mb-2">
+              <i class="bi bi-calendar2-check"></i>
+            </div>
+            <div class="h3 fw-bold mb-0 text-warm-dark">4+ 
+              <span class="fs-6 fw-semibold text-warm-muted">
+                <span data-lang="th">ปี</span>
+                <span data-lang="en">Yrs</span>
+              </span>
+            </div>
+            <div class="text-primary small fw-semibold">
+              <span data-lang="th">ประสบการณ์มีเดีย</span>
+              <span data-lang="en">Media Experience</span>
+            </div>
+            <p class="text-warm-muted smaller mb-0 mt-1">
+              <span data-lang="th">งานฟรีแลนซ์ &amp; อินเฮาส์องค์กร</span>
+              <span data-lang="en">Freelance &amp; Corporate In-house</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Metric 2: การดูแลโปรดักชันครบวงจร -->
+        <div class="col-6 col-lg-3">
+          <div class="card stat-card h-100 border-0 p-3 rounded-4 bg-white shadow-sm">
+            <div class="stat-icon-wrap mx-auto mb-2">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <div class="h3 fw-bold mb-0 text-warm-dark">End-to-End</div>
+            <div class="text-primary small fw-semibold">
+              <span data-lang="th">ลุยเดี่ยว &amp; คุมทีม</span>
+              <span data-lang="en">Solo &amp; Team Lead</span>
+            </div>
+            <p class="text-warm-muted smaller mb-0 mt-1">
+              <span data-lang="th">ดูแลครบตั้งแต่บรีฟจนถึงส่งมอบ</span>
+              <span data-lang="en">From briefing to final delivery</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Metric 3: ความหลากหลายของประเภทสื่อ -->
+        <div class="col-6 col-lg-3">
+          <div class="card stat-card h-100 border-0 p-3 rounded-4 bg-white shadow-sm">
+            <div class="stat-icon-wrap mx-auto mb-2">
+              <i class="bi bi-camera-reels"></i>
+            </div>
+            <div class="h3 fw-bold mb-0 text-warm-dark">Versatile</div>
+            <div class="text-primary small fw-semibold">
+              <span data-lang="th">สื่อหลากหลายประเภท</span>
+              <span data-lang="en">Diverse Content Focus</span>
+            </div>
+            <p class="text-warm-muted smaller mb-0 mt-1">
+              <span data-lang="th">โฆษณา, สุขภาพ, อีเวนต์ &amp; แบรนด์</span>
+              <span data-lang="en">Commercial, Healthcare &amp; Events</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Metric 4: ระบบถ่ายทอดสดและไอที -->
+        <div class="col-6 col-lg-3">
+          <div class="card stat-card h-100 border-0 p-3 rounded-4 bg-white shadow-sm">
+            <div class="stat-icon-wrap mx-auto mb-2">
+              <i class="bi bi-broadcast"></i>
+            </div>
+            <div class="h3 fw-bold mb-0 text-warm-dark">Multi-Cam</div>
+            <div class="text-primary small fw-semibold">
+              <span data-lang="th">ถ่ายทอดสด &amp; ไอที</span>
+              <span data-lang="en">Live Stream &amp; Tech</span>
+            </div>
+            <p class="text-warm-muted smaller mb-0 mt-1">
+              <span data-lang="th">คุมระบบภาพ-เสียงงานสัมมนา</span>
+              <span data-lang="en">Hybrid events &amp; broadcasting</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- แถวกลาง: กระบวนการผลิตสื่อครบวงจร (Production Workflow) -->
+      <div class="text-center mb-4">
+        <h4 class="fw-bold mb-1 text-warm-dark">
+          <span data-lang="th">กระบวนการผลิตสื่อครบวงจร</span>
+          <span data-lang="en">Production Workflow</span>
+        </h4>
+      </div>
+
+      <div class="row g-3 g-lg-4 mb-5">
+        
+        <!-- Step 01: Pre-Production -->
+        <div class="col-md-6 col-lg-3">
+          <div class="workflow-card bg-white p-4 rounded-4 shadow-sm h-100 border-0 position-relative">
+            <span class="workflow-step-pill">01</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-pencil-square text-primary fs-5"></i>
+              <h6 class="fw-bold text-warm-dark mb-0">Pre-Production</h6>
+            </div>
+            <ul class="workflow-list list-unstyled mb-0">
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">วางโครงเรื่อง &amp; สตอรี่บอร์ด</span>
+                <span data-lang="en">Storyboarding &amp; concepts</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">บรีฟลูกค้า ทีมงาน หรือวิทยากร</span>
+                <span data-lang="en">Client &amp; talent briefing</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">ตรวจสคริปต์ตามโจทย์การตลาด</span>
+                <span data-lang="en">Script review &amp; objectives</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 02: Production -->
+        <div class="col-md-6 col-lg-3">
+          <div class="workflow-card bg-white p-4 rounded-4 shadow-sm h-100 border-0 position-relative">
+            <span class="workflow-step-pill">02</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-camera-reels text-primary fs-5"></i>
+              <h6 class="fw-bold text-warm-dark mb-0">Production</h6>
+            </div>
+            <ul class="workflow-list list-unstyled mb-0">
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">กำกับคัตช็อต &amp; บันทึกมุม Candid</span>
+                <span data-lang="en">Directing &amp; candid filming</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">จัดแสง 3 จุด (3-Point Lighting)</span>
+                <span data-lang="en">Studio &amp; 3-point lighting</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">บันทึกเสียงไมค์ไวเลสคมชัด</span>
+                <span data-lang="en">Pro wireless audio capture</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 03: Post-Production -->
+        <div class="col-md-6 col-lg-3">
+          <div class="workflow-card bg-white p-4 rounded-4 shadow-sm h-100 border-0 position-relative">
+            <span class="workflow-step-pill">03</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-layers text-primary fs-5"></i>
+              <h6 class="fw-bold text-warm-dark mb-0">Post-Production</h6>
+            </div>
+            <ul class="workflow-list list-unstyled mb-0">
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">ตัดต่อคุมจังหวะเล่าเรื่อง (Pacing)</span>
+                <span data-lang="en">Narrative pacing &amp; storytelling</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">ออกแบบ 2D โมชันกราฟิก</span>
+                <span data-lang="en">2D motion graphics &amp; titles</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">เกลี่ยสี Color Grading &amp; คุมโทน</span>
+                <span data-lang="en">Color grading &amp; sound mix</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 04: Broadcast & Delivery -->
+        <div class="col-md-6 col-lg-3">
+          <div class="workflow-card bg-white p-4 rounded-4 shadow-sm h-100 border-0 position-relative">
+            <span class="workflow-step-pill">04</span>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-send-check text-primary fs-5"></i>
+              <h6 class="fw-bold text-warm-dark mb-0">Delivery &amp; Live</h6>
+            </div>
+            <ul class="workflow-list list-unstyled mb-0">
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">ควบคุมระบบสตรีม Multi-Cam</span>
+                <span data-lang="en">Multi-cam broadcast switching</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">Export สเปกตรงตามแพลตฟอร์ม</span>
+                <span data-lang="en">Multi-platform video specs</span>
+              </li>
+              <li>
+                <i class="bi bi-check2 text-primary me-2"></i>
+                <span data-lang="th">ส่งมอบไฟล์พร้อมใช้งานเป็นระบบ</span>
+                <span data-lang="en">Systematic asset delivery</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- แถวล่าง: เครือข่ายองค์กร โรงพยาบาล และงานพาณิชย์ที่ร่วมงาน -->
+      <div class="text-center pt-2">
+        <p class="text-uppercase tracking-wide text-warm-muted small fw-semibold mb-3">
+          <span data-lang="th">องค์กรและเครือข่ายที่ร่วมงาน</span>
+          <span data-lang="en">Organizations &amp; Client Collaborations</span>
+        </p>
+        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+          <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-hospital me-1 text-danger"></i>
+            <span data-lang="th">โรงพยาบาลบำรุงราษฎร์ จังหวัดภูเก็ต</span>
+            <span data-lang="en">Bumrungrad International Hospital Phuket</span>
+          </span>
+          <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-hospital me-1 text-primary"></i>
+            <span data-lang="th">โรงพยาบาลกรุงเทพภูเก็ต</span>
+            <span data-lang="en">Bangkok Hospital Phuket</span>
+          </span>
+          <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-hospital me-1 text-primary"></i>
+            <span data-lang="th">โรงพยาบาลกรุงเทพสิริโรจน์</span>
+            <span data-lang="en">Bangkok Hospital Siriroj</span>
+          </span>
+          <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-hospital me-1 text-primary"></i>
+            <span data-lang="th">โรงพยาบาลดีบุก</span>
+            <span data-lang="en">Dibuk Hospital</span>
+          </span>
+          <!-- <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-diagram-3 me-1 text-primary"></i>
+            <span data-lang="th">เครือ BDMS กลุ่ม 6</span>
+            <span data-lang="en">BDMS Network Group 6</span>
+          </span>
+          <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-gem me-1 text-warning"></i>
+            BDMS Wellness Clinic x Sri panwa
+          </span> -->
+          <span class="badge bg-white text-dark border p-2 px-3 rounded-pill fw-medium shadow-sm">
+            <i class="bi bi-mortarboard me-1 text-secondary"></i>
+            <span data-lang="th">มหาวิทยาลัยสงขลานครินทร์ (PSU)</span>
+            <span data-lang="en">Prince of Songkla University</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SHOWREEL SECTION (ซ่อนไว้ชั่วคราว: นำ <!-- และ -->
+  <!--
+  <section id="showreel" class="py-5">
+    <div class="container py-4 text-center">
+      <div class="mb-4">
+        <h2 class="fw-bold">Production Showreel 2026</h2>
+        <p class="text-warm-muted">
+          <span data-lang="th">รวมไฮไลต์ผลงานกำกับภาพ ตัดต่อ และโมชันกราฟิกความยาว 60 วินาที</span>
+          <span data-lang="en">A 60-second highlight reel showcasing cinematography, video editing, and motion design</span>
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden border border-secondary-subtle">
+            <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Showreel Video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- 3. Works (Selected Works - Rendered via JS) -->
+  <section id="portfolio" class="py-5 bg-section-white border-top border-bottom">
+    <div class="container py-4">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">
+          <span data-lang="th">ผลงาน</span>
+          <span data-lang="en">Works</span>
+        </h2>
+        <p class="text-warm-muted">
+          <span data-lang="th">ผลงานสื่อมัลติมีเดียทางการแพทย์ งานถ่ายทอดสด และโปรดักชันเชิงพาณิชย์</span>
+          <span data-lang="en">Medical multimedia production, live streaming operations, and commercial projects</span>
+        </p>
+        
+        <!-- Filter Tabs -->
+        <ul class="nav nav-pills nav-pills-warm justify-content-center mt-3" id="portfolioTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-all" data-bs-toggle="pill" data-bs-target="#content-all" type="button" role="tab">
+              <span data-lang="th">Featured</span>
+              <span data-lang="en">Featured</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-video" data-bs-toggle="pill" data-bs-target="#content-video" type="button" role="tab">Video</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-photo" data-bs-toggle="pill" data-bs-target="#content-photo" type="button" role="tab">Photo</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-motion" data-bs-toggle="pill" data-bs-target="#content-motion" type="button" role="tab">Motion</button>
+          </li>
+          <!-- <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-live" data-bs-toggle="pill" data-bs-target="#content-live" type="button" role="tab">Live Stream</button>
+          </li> -->
+        </ul>
+      </div>
+
+      <!-- Tab Content Grids (Data rendered dynamically) -->
+      <div class="tab-content pt-3" id="portfolioTabsContent">
+        <div class="tab-pane fade show active" id="content-all" role="tabpanel">
+          <div class="row g-4" id="grid-all"></div>
+        </div>
+        <div class="tab-pane fade" id="content-video" role="tabpanel">
+          <div class="row g-4" id="grid-video"></div>
+        </div>
+        <div class="tab-pane fade" id="content-photo" role="tabpanel">
+          <div class="row g-4" id="grid-photo"></div>
+        </div>
+        <div class="tab-pane fade" id="content-motion" role="tabpanel">
+          <div class="row g-4" id="grid-motion"></div>
+        </div>
+        <div class="tab-pane fade" id="content-live" role="tabpanel">
+          <div class="row g-4" id="grid-live"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">
+          <span data-lang="th">ทักษะและความเชี่ยวชาญ</span>
+          <span data-lang="en">Skills &amp; Tools</span>
+        </h2>
+        <p class="text-warm-muted">
+          <span data-lang="th">ทักษะการผลิตสื่อ ซอฟต์แวร์ และอุปกรณ์ที่พร้อมใช้งานในองค์กร</span>
+          <span data-lang="en">Core production capabilities, creative software, and studio equipment</span>
+        </p>
+      </div>
+
+      <!-- 4 กล่องทักษะหลัก -->
+      <div class="row g-4 mb-5">
+        
+        <!-- กล่อง Photo (รองรับ Portrait บุคคลทั่วไป ไลฟ์สไตล์ และคอมเมอร์เชียล) -->
+        <div class="col-6 col-lg-3">
+          <div class="service-box text-center h-100 p-4 bg-white rounded-4 shadow-sm">
+            <i class="bi bi-camera service-icon mb-3 fs-2" style="color: var(--primary-color);"></i>
+            <h5 class="fw-bold mb-2">Photo</h5>
+            <p class="text-warm-muted small mb-0">
+              <span data-lang="th">Portrait บุคคลทั่วไป/โปรไฟล์, ไลฟ์สไตล์, Event, Commercial และจัดไฟ Studio</span>
+              <span data-lang="en">Individual &amp; Lifestyle Portraits, Profile, Events, Commercial &amp; Studio Lighting</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- กล่อง Video -->
+        <div class="col-6 col-lg-3">
+          <div class="service-box text-center h-100 p-4 bg-white rounded-4 shadow-sm">
+            <i class="bi bi-camera-video service-icon mb-3 fs-2" style="color: var(--primary-color);"></i>
+            <h5 class="fw-bold mb-2">Video</h5>
+            <p class="text-warm-muted small mb-0">
+              <span data-lang="th">กำกับภาพ, สัมภาษณ์แพทย์, Video Journey และตัดต่อคุมจังหวะเล่าเรื่อง</span>
+              <span data-lang="en">Cinematography, doctor interviews, patient journey &amp; narrative editing</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- กล่อง Motion -->
+        <div class="col-6 col-lg-3">
+          <div class="service-box text-center h-100 p-4 bg-white rounded-4 shadow-sm">
+            <i class="bi bi-play-circle service-icon mb-3 fs-2" style="color: var(--primary-color);"></i>
+            <h5 class="fw-bold mb-2">Motion</h5>
+            <p class="text-warm-muted small mb-0">
+              <span data-lang="th">2D Motion Graphics, แอนิเมชันเปิดรายการ, สื่อประชาสัมพันธ์ และ Explainer</span>
+              <span data-lang="en">2D vector animation, opening stings, promo reels &amp; explainer visuals</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- กล่อง Live Stream -->
+        <div class="col-6 col-lg-3">
+          <div class="service-box text-center h-100 p-4 bg-white rounded-4 shadow-sm">
+            <i class="bi bi-broadcast-pin service-icon mb-3 fs-2" style="color: var(--primary-color);"></i>
+            <h5 class="fw-bold mb-2">Live Stream</h5>
+            <p class="text-warm-muted small mb-0">
+              <span data-lang="th">สตรีม Multi-cam, สลับภาพ Switcher, คุมสัญญาณภาพและเสียงงานสัมมนา</span>
+              <span data-lang="en">Multi-cam engineering, broadcast video switching &amp; audio routing</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- รายการโปรแกรม, อุปกรณ์จริง และเครื่องมือ AI -->
+      <div class="row g-4 pt-2">
+        <!-- 1. Creative Software -->
+        <div class="col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3 text-warm-dark">
+            <i class="bi bi-laptop me-2" style="color: var(--primary-color);"></i>
+            <span data-lang="th">ซอฟต์แวร์ตัดต่อ &amp; กราฟิก</span>
+            <span data-lang="en">Creative Software</span>
+          </h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge badge-gear p-2 px-3">Adobe Premiere Pro</span>
+            <span class="badge badge-gear p-2 px-3">Adobe After Effects</span>
+            <span class="badge badge-gear p-2 px-3">Adobe Illustrator</span>
+            <span class="badge badge-gear p-2 px-3">Adobe Photoshop</span>
+            <span class="badge badge-gear p-2 px-3">Adobe Lightroom Classic</span>
+            <span class="badge badge-gear p-2 px-3">DaVinci Resolve</span>
+            <span class="badge badge-gear p-2 px-3">OBS Studio</span>
+          </div>
+        </div>
+
+        <!-- 2. AI-Assisted & Productivity -->
+        <div class="col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3 text-warm-dark">
+            <i class="bi bi-cpu me-2" style="color: var(--primary-color);"></i>
+            <span data-lang="th">AI &amp; โฟลว์งานยุคใหม่</span>
+            <span data-lang="en">AI &amp; Smart Workflow</span>
+          </h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge badge-gear p-2 px-3">ChatGPT &amp; Claude AI</span>
+            <span class="badge badge-gear p-2 px-3">Script &amp; Creative Ideation</span>
+            <span class="badge badge-gear p-2 px-3">Adobe Firefly / Gen-AI</span>
+            <span class="badge badge-gear p-2 px-3">AI Audio Denoise &amp; Enhance</span>
+            <span class="badge badge-gear p-2 px-3">AI Storyboarding &amp; Moodboard</span>
+            <span class="badge badge-gear p-2 px-3">Audience &amp; Data Analytics</span>
+          </div>
+        </div>
+
+        <!-- 3. Hardware & Production Gear -->
+        <div class="col-lg-4">
+          <h5 class="fw-bold mb-3 text-warm-dark">
+            <i class="bi bi-camera-reels me-2" style="color: var(--primary-color);"></i>
+            <span data-lang="th">อุปกรณ์ &amp; ฮาร์ดแวร์</span>
+            <span data-lang="en">Hardware &amp; Gear</span>
+          </h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge badge-gear p-2 px-3">
+              <span data-lang="th">กล้องดิจิทัล &amp; เลนส์</span>
+              <span data-lang="en">Digital Cameras &amp; Lenses</span>
+            </span>
+            <span class="badge badge-gear p-2 px-3">Video Switcher</span>
+            <span class="badge badge-gear p-2 px-3">Wireless Audio / Lapel Mics</span>
+            <span class="badge badge-gear p-2 px-3">Studio Lights &amp; Softbox</span>
+            <span class="badge badge-gear p-2 px-3">Gimbal Stabilizer</span>
+            <span class="badge badge-gear p-2 px-3">Capture Cards / SDI Setup</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Work Experience & Education -->
+  <section id="experience" class="py-5 bg-section-white border-top border-bottom">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">
+          <span data-lang="th">ประวัติการทำงานและการศึกษา</span>
+          <span data-lang="en">Experience &amp; Education</span>
+        </h2>
+        <p class="text-warm-muted mb-3">
+          <span data-lang="th">เส้นทางการทำงานและพื้นฐานการศึกษาในสายวิชาชีพ</span>
+          <span data-lang="en">Professional milestones and academic background</span>
+        </p>
+        <span class="badge bg-secondary-subtle text-secondary px-3 py-2 rounded-pill">
+          <i class="bi bi-clock-history me-1"></i>
+          <span data-lang="th">ประสบการณ์ทำงานสายมีเดียรวม 4+ ปี</span>
+          <span data-lang="en">4+ Years Total Experience in Media Production</span>
+        </span>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          
+          <!-- Experience 1: โรงพยาบาลกรุงเทพภูเก็ต -->
+          <div class="timeline-item">
+            <span class="badge bg-primary-subtle text-primary mb-1">
+              <span data-lang="th">มิ.ย. 2567 - ปัจจุบัน (2+ ปี)</span>
+              <span data-lang="en">Jun 2024 - Present (2+ yrs)</span>
+            </span>
+            <h5 class="fw-bold mb-1">Multimedia Officer</h5>
+            <p class="text-warm-muted small mb-2">
+              <span data-lang="th">โรงพยาบาลกรุงเทพภูเก็ต</span>
+              <span data-lang="en">Bangkok Hospital Phuket</span>
+            </p>
+            <p class="text-warm-muted small">
+              <span data-lang="th">ผลิตสื่อมัลติมีเดียครบวงจร ทั้งบันทึกภาพนิ่ง งานวิดีโอประชาสัมพันธ์และให้ความรู้ทางการแพทย์ (Health Education), ออกแบบ 2D Motion Graphics รวมถึงควบคุมระบบ Live Streaming สำหรับงานสัมมนาวิชาการและอีเวนต์ทางการแพทย์ของโรงพยาบาล</span>
+              <span data-lang="en">Responsible for end-to-end multimedia production, including photography, healthcare promotional/educational videos, 2D motion graphics, and multi-camera live streaming engineering for medical conferences and events.</span>
+            </p>
+          </div>
+
+          <!-- Experience 2: มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต -->
+          <div class="timeline-item">
+            <span class="badge bg-secondary-subtle text-secondary mb-1">
+              <span data-lang="th">ก.พ. 2567 - พ.ค. 2567 (4 เดือน)</span>
+              <span data-lang="en">Feb 2024 - May 2024 (4 mos)</span>
+            </span>
+            <h5 class="fw-bold mb-1">IT Support</h5>
+            <p class="text-warm-muted small mb-2">
+              <span data-lang="th">มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</span>
+              <span data-lang="en">Prince of Songkla University, Phuket Campus</span>
+            </p>
+            <p class="text-warm-muted small">
+              <span data-lang="th">ดูแลและแก้ไขปัญหาด้านฮาร์ดแวร์ ซอฟต์แวร์ ระบบเครือข่ายคอมพิวเตอร์ และสนับสนุนการเชื่อมต่ออุปกรณ์โสตทัศนูปกรณ์ (Audio/Visual) สำหรับห้องเรียน ห้องประชุม และงานสัมมนาทางวิชาการ</span>
+              <span data-lang="en">Provided technical troubleshooting for computer hardware, software, and networking, while supporting audio-visual (AV) and presentation equipment setups for academic seminars and multimedia rooms.</span>
+            </p>
+          </div>
+
+          <!-- Experience 3: บริษัท อนุพงษ์ อินดัสเทรียล จำกัด -->
+          <div class="timeline-item">
+            <span class="badge bg-secondary-subtle text-secondary mb-1">
+              <span data-lang="th">ก.ค. 2566 - ม.ค. 2567 (7 เดือน)</span>
+              <span data-lang="en">Jul 2023 - Jan 2024 (7 mos)</span>
+            </span>
+            <h5 class="fw-bold mb-1">Admin &amp; Operations</h5>
+            <p class="text-warm-muted small mb-2">
+              <span data-lang="th">บริษัท อนุพงษ์ อินดัสเทรียล จำกัด</span>
+              <span data-lang="en">Anupong Industrial Co., Ltd.</span>
+            </p>
+            <p class="text-warm-muted small">
+              <span data-lang="th">ดูแลจัดการงานเอกสาร ข้อมูลระบบปฏิบัติการ ประสานงานฝ่ายต่าง ๆ ควบคุมการตรวจเช็กและจัดสรรทรัพยากร เพื่อสนับสนุนกระบวนการดำเนินงานขององค์กรให้ราบรื่นและเป็นระบบ</span>
+              <span data-lang="en">Managed administrative documentation, operational data, cross-departmental coordination, and asset tracking to optimize workflow efficiency and systematic daily operations.</span>
+            </p>
+          </div>
+
+          <!-- Education: มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต -->
+          <div class="timeline-item">
+            <span class="badge bg-secondary-subtle text-secondary mb-1">
+              <span data-lang="th">ส.ค. 2562 - พ.ค. 2566 (4 ปี)</span>
+              <span data-lang="en">Aug 2019 - May 2023 (4 yrs)</span>
+            </span>
+            <h5 class="fw-bold mb-1">
+              <i class="bi bi-mortarboard me-1 text-secondary"></i>
+              <span data-lang="th">วิทยาศาสตร์บัณฑิต (สาขาการคอมพิวเตอร์)</span>
+              <span data-lang="en">Bachelor of Science in Computing</span>
+            </h5>
+            <p class="text-warm-muted small mb-2">
+              <span data-lang="th">มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต · แขนง Data Science</span>
+              <span data-lang="en">Prince of Songkla University, Phuket Campus · Data Science Track</span>
+            </p>
+            <p class="text-warm-muted small mb-0">
+              <span data-lang="th">ศึกษาด้านวิทยาการคอมพิวเตอร์ เน้นแขนงวิทยาศาสตร์ข้อมูล (Data Science) และการวิเคราะห์ข้อมูล (Data Analytics) ปลูกฝังทักษะกระบวนการคิดเชิงตรรกะและวิเคราะห์ (Analytical Thinking) อย่างเป็นระบบ สามารถนำข้อมูลเชิงลึก พฤติกรรมผู้ชม และตัวเลขสถิติบน Social Media (Engagement &amp; Audience Insights) มาใช้วางแผนและพัฒนาชิ้นงานวิดีโอให้ตอบโจทย์ทางธุรกิจ ควบคู่กับการประยุกต์ใช้ความรู้ด้านเครือข่ายและฮาร์ดแวร์เพื่อวางระบบ Live Streaming ได้อย่างมีประสิทธิภาพ</span>
+              <span data-lang="en">Specialized in Data Science and Data Analytics within computer science fundamentals. Applies systematic analytical thinking and audience engagement metrics to plan and optimize video content, while utilizing core IT networking and hardware competencies for robust multi-camera live broadcast operations.</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container py-4 text-center">
+      <h2 class="fw-bold mb-3">
+        <span data-lang="th">ช่องทางการติดต่อ</span>
+        <span data-lang="en">Contact</span>
+      </h2>
+      <p class="text-warm-muted mb-4">
+        <span data-lang="th">สามารถติดต่อได้ผ่านช่องทางด้านล่างนี้</span>
+        <span data-lang="en">Feel free to reach out directly.</span>
+      </p>
+      
+      <!-- Contact Action Buttons -->
+      <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+        <a href="mailto:jakkasaingam@gmail.com" class="btn btn-outline-warm px-4 py-2">
+          <i class="bi bi-envelope-fill me-2" style="color: var(--primary-color);"></i>jakkasaingam@gmail.com
+        </a>
+        <a href="tel:0842674477" class="btn btn-outline-warm px-4 py-2">
+          <i class="bi bi-telephone-fill me-2" style="color: var(--primary-color);"></i>084-267-4477
+        </a>
+        <a href="https://www.facebook.com/6SIXAPRIL" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warm px-4 py-2">
+          <i class="bi bi-facebook me-2 text-primary"></i>
+          <span data-lang="th">6 APRIL.</span>
+          <span data-lang="en">Page: 6 APRIL.</span>
+        </a>
+        <a href="https://line.me/ti/p/~YOUR_LINE_ID" target="_blank" rel="noopener noreferrer" class="btn btn-outline-warm px-4 py-2">
+          <i class="bi bi-line me-2 text-success"></i>LINE ID: p_o_n_
+        </a>
+      </div>
+
+      <!-- Quick Social Icons -->
+      <div class="d-flex justify-content-center gap-4 fs-4">
+        <a href="https://youtube.com" target="_blank" class="text-danger" title="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/kamluangload/" target="_blank" class="text-info" title="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" style="color: #E1306C;" title="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center border-top">
+    <div class="container">
+      <small>© 2026 Jakkapol Saingam. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 4 Category Data Files -->
+  <script src="js/data/photos.js"></script>
+  <script src="js/data/videos.js"></script>
+  <script src="js/data/motions.js"></script>
+  <script src="js/data/live.js"></script>
+
+  <!-- Main Controller Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
