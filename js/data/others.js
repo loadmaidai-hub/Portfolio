@@ -28,7 +28,7 @@ const otherProjects = [
     id: "other-freshmen-orientation-2022",
     category: "other",
     badgeCategory: "Campus Event & Operations",
-    role: "Role: Event Director & Student President",
+    role: "Role: Event Director",
     title: "PSU Phuket Freshmen Orientation 2022",
     clientTh: "องค์การบริหาร องค์การนักศึกษา ม.อ.ภูเก็ต",
     clientEn: "PSU Phuket Student Union",
@@ -51,7 +51,7 @@ const otherProjects = [
     id: "other-rov-esports-tournament",
     category: "other",
     badgeCategory: "E-Sports & Virtual Community",
-    role: "Role: Tournament Director & Organizer",
+    role: "Role: Director & Organizer",
     title: "PSU Phuket Rov E-sport Game 2021",
     clientTh: "องค์การบริหาร องค์การนักศึกษา ม.อ.ภูเก็ต",
     clientEn: "PSU Phuket Student Administrative Organization",
@@ -69,5 +69,28 @@ const otherProjects = [
     linkTextTh: "ดูโพสต์กิจกรรม",
     linkTextEn: "View Tournament",
     isFeatured: true
+  },
+  {
+    id: "other-virtual-student-meetup-live",
+    category: "other",
+    badgeCategory: "Virtual Community & Live",
+    role: "Role: Live Stream Director",
+    title: "PSU Phuket Virtual Student Meetup & Live Q&A",
+    clientTh: "องค์การบริหาร องค์การนักศึกษา ม.อ.ภูเก็ต",
+    clientEn: "PSU Phuket Student Administrative Organization",
+    descTh: "จัดกิจกรรมถ่ายทอดสด (Live Streaming) เพื่อเปิดพื้นที่พูดคุยและสร้างปฏิสัมพันธ์ระหว่างทีมองค์การบริหารกับรุ่นน้องในช่วงการเรียนการสอนออนไลน์ยุคโควิด-19 ทำหน้าที่ดูแลระบบสัญญาณไลฟ์ ดำเนินรายการ ตอบข้อสงสัยเกี่ยวกับการเรียนและการใช้ชีวิตในมหาวิทยาลัย เพื่อลดความตึงเครียดและสร้างความใกล้ชิดแม้ต้องอยู่ห่างไกล",
+    descEn: "Initiated and hosted an interactive live broadcast connecting student leaders with junior students during COVID-19 remote learning; engineered the live stream setup and facilitated campus life Q&A to build remote community bonding.",
+    image: "https://i.postimg.cc/4Nn7MPMk/470074915-4754107738147939-2971741909387797279-n.jpg",
+    imgPosition: "center",
+    gear: [
+      "Live Streaming (OBS)",
+      "Interactive Broadcasting",
+      "Virtual Community Engagement",
+      "Student Welfare Communication"
+    ],
+    link: "https://www.facebook.com/share/p/1BtPUVtNnJ/",
+    linkTextTh: "ดูการถ่ายทอดสด",
+    linkTextEn: "Watch Live Session",
+    isFeatured: false
   },
 ];
