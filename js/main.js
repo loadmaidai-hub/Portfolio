@@ -1,17 +1,28 @@
 // js/main.js
 
-// 1. รวมข้อมูลจากทุกหมวดหมู่เข้าด้วยกัน
+// 1. รวมข้อมูลจากทุกหมวดหมู่เข้าด้วยกัน (รวมทั้งหมวด Other)
 const portfolioData = [
   ...photoProjects,
   ...videoProjects,
   ...motionProjects,
-  ...liveProjects
+  ...(typeof liveProjects !== 'undefined' ? liveProjects : []),
+  ...(typeof otherProjects !== 'undefined' ? otherProjects : [])
 ];
 
 // 2. ฟังก์ชันสร้างการ์ด HTML
-// ฟังก์ชันสร้างการ์ด HTML (ลบไอคอนบนภาพปกออกทั้งหมด)
 function createCardHTML(item) {
   const gearBadges = item.gear.map(g => `<span class="badge badge-gear small">${g}</span>`).join(' ');
+
+  // ปรับไอคอนหน้าชื่อหน่วยงานตามประเภทงาน
+  const clientIcon = item.category === 'other' ? 'bi-mortarboard' : 'bi-hospital';
+
+  // ปรับไอคอนที่ปุ่มลิงก์ตามประเภทงาน
+  let actionIcon = 'bi-play-circle';
+  if (item.category === 'photo') {
+    actionIcon = 'bi-facebook';
+  } else if (item.category === 'other') {
+    actionIcon = 'bi-arrow-up-right-square';
+  }
 
   return `
     <div class="col-md-6 col-lg-4">
@@ -27,7 +38,7 @@ function createCardHTML(item) {
           <h5 class="fw-bold mb-1">${item.title}</h5>
           
           <div class="card-client mb-2 text-primary small fw-semibold">
-            <i class="bi bi-hospital me-1"></i>
+            <i class="bi ${clientIcon} me-1"></i>
             <span data-lang="th">${item.clientTh}</span>
             <span data-lang="en">${item.clientEn}</span>
           </div>
@@ -42,7 +53,7 @@ function createCardHTML(item) {
           </div>
 
           <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-warm">
-            <i class="bi ${item.category === 'photo' ? 'bi-facebook' : 'bi-play-circle'} me-1"></i>
+            <i class="bi ${actionIcon} me-1"></i>
             <span data-lang="th">${item.linkTextTh}</span>
             <span data-lang="en">${item.linkTextEn}</span>
           </a>
@@ -59,14 +70,16 @@ function renderPortfolio() {
   const gridPhoto = document.getElementById('grid-photo');
   const gridMotion = document.getElementById('grid-motion');
   const gridLive = document.getElementById('grid-live');
+  const gridOther = document.getElementById('grid-other');
 
   if (!gridAll) return;
 
   gridAll.innerHTML = portfolioData.filter(i => i.isFeatured).map(createCardHTML).join('');
-  gridVideo.innerHTML = videoProjects.map(createCardHTML).join('');
-  gridPhoto.innerHTML = photoProjects.map(createCardHTML).join('');
-  gridMotion.innerHTML = motionProjects.map(createCardHTML).join('');
-  gridLive.innerHTML = liveProjects.map(createCardHTML).join('');
+  if (gridVideo && typeof videoProjects !== 'undefined') gridVideo.innerHTML = videoProjects.map(createCardHTML).join('');
+  if (gridPhoto && typeof photoProjects !== 'undefined') gridPhoto.innerHTML = photoProjects.map(createCardHTML).join('');
+  if (gridMotion && typeof motionProjects !== 'undefined') gridMotion.innerHTML = motionProjects.map(createCardHTML).join('');
+  if (gridLive && typeof liveProjects !== 'undefined') gridLive.innerHTML = liveProjects.map(createCardHTML).join('');
+  if (gridOther && typeof otherProjects !== 'undefined') gridOther.innerHTML = otherProjects.map(createCardHTML).join('');
 }
 
 // 4. สลับภาษา
