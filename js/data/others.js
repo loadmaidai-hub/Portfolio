@@ -5,7 +5,7 @@ const otherProjects = [
     id: "other-campaign-page-better-life",
     category: "other",
     badgeCategory: "Digital PR & Campaign",
-    role: "Role: Campaign Founder & Media Lead",
+    role: "Role: Campaign & Media Lead",
     title: "Campaign & Brand Strategy",
     clientTh: "พรรคศรีตรังช่อใหม่ · องค์การบริหาร องค์การนักศึกษา ม.อ.ภูเก็ต",
     clientEn: "Sri Trang Chor Mai Campaign · PSU Phuket",
@@ -45,6 +45,29 @@ const otherProjects = [
     link: "https://www.facebook.com/share/p/1DeVATuJDJ/",
     linkTextTh: "ดูโพสต์กิจกรรม",
     linkTextEn: "View Event Post",
+    isFeatured: true
+  },
+  {
+    id: "other-rov-esports-tournament",
+    category: "other",
+    badgeCategory: "E-Sports & Virtual Community",
+    role: "Role: Tournament Director & Organizer",
+    title: "PSU Phuket Rov E-sport Game 2021",
+    clientTh: "องค์การบริหาร องค์การนักศึกษา ม.อ.ภูเก็ต",
+    clientEn: "PSU Phuket Student Administrative Organization",
+    descTh: "ริเริ่มและจัดโครงการแข่งขันกีฬาอีสปอร์ต (RoV) ในรูปแบบออนไลน์ช่วงสถานการณ์โควิด-19 เพื่อเปิดพื้นที่สร้างปฏิสัมพันธ์และความสามัคคีระหว่างรุ่นพี่และรุ่นน้องทุกคณะ ควบคุมการบริหารจัดการสายการแข่งขัน กฎกติกา การประสานงานผู้เข้าแข่งขัน และการถ่ายทอดสดออนไลน์",
+    descEn: "Initiated and managed an online RoV E-Sports tournament during the COVID-19 pandemic to foster senior-junior student engagement remotely. Directed tournament brackets, rule enforcement, participant coordination, and online live stream broadcasts.",
+    image: "https://i.postimg.cc/5tbr9X8J/202238660-3613580768867314-629013487524024085-n.jpg",
+    imgPosition: "center",
+    gear: [
+      "Virtual Event Operations",
+      "Tournament Logistics",
+      "Online Community Engagement",
+      "Live Streaming Coordination"
+    ],
+    link: "https://www.facebook.com/share/p/1Bom3jLthH/",
+    linkTextTh: "ดูโพสต์กิจกรรม",
+    linkTextEn: "View Tournament",
     isFeatured: true
   },
 ];
